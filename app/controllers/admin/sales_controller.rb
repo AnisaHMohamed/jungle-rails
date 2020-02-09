@@ -1,5 +1,7 @@
 class Admin::SalesController < ApplicationController
-def index
-  @sales=Sale.all
-end
+  http_basic_authenticate_with name: ENV['USERNAME'], password: ENV['PASSWORD']
+
+  def index
+    @sales=Sale.all
+  end
 end
