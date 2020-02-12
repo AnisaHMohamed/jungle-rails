@@ -57,11 +57,6 @@ RSpec.describe Product, type: :model do
         })
     expect(shirt).to_not be_valid
     end
-
-
-
-    
-
   end
 end
 
